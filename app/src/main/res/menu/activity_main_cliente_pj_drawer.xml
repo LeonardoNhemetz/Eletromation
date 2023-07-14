@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Ocorrencias">
+        <menu>
+            <item
+                android:id="@+id/nav_ocorrencia"
+                android:icon="@drawable/pedido"
+                android:title="Criar Ocorrência"/>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Visita Técnica">
+        <menu>
+            <item
+                android:id="@+id/nav_pedidoPJ"
+                android:icon="@drawable/pedido"
+                android:title="Agendar Visita Técnica" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Usuários">
+        <menu>
+            <item
+                android:id="@+id/nav_CadastrarClientePJ"
+                android:icon="@drawable/character"
+                android:title="Cadastrar Novo Usuario" />
+
+        </menu>
+    </item>
+
+</menu>

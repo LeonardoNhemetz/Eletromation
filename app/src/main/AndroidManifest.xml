@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobitech.eletromation">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".CriarConta.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Cliente.CriarPedidoCliente">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CriarConta.CriarContaEscolha" />
+        <activity android:name=".CriarConta.CriarContaCliente">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CriarConta.CriarContaEspecialista" />
+        <activity
+            android:name=".Especialista.MainEspecialista"
+            android:label="@string/title_activity_main_especialista"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Cliente.MainCliente"
+            android:label="@string/title_activity_main_cliente"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Cliente.Audio" />
+        <activity android:name=".CriarConta.EnviarSMSCadastroCliente" />
+        <activity android:name=".CriarConta.EnviarSMSCadastroEspecialista" />
+        <activity android:name=".Especialista.GetPedidos.GetPedidos">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Especialista.GetPedidos.VerPedido.VerPedido" />
+        <activity
+            android:name=".Cliente.ClientePJ.MainClientePJ"
+            android:label="@string/title_activity_main_cliente_pj"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CriarConta.CriarContaPJCliente" />
+        <activity android:name=".EsqueceuSenha" />
+        <activity android:name=".MudarSenha" />
+        <activity android:name=".Cliente.CriarOcorrencia" />
+        <activity
+            android:name=".Cliente.ClientePJ.HomePJ"
+            android:label="@string/title_activity_home_pj"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

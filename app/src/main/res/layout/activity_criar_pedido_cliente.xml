@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente.CriarPedidoCliente"
+    android:background="#151A7777"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+
+
+            <TextView
+                android:id="@+id/lblServicos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="AGENDAR VISITA TÉCNICA"
+                android:textColor="#1A7777"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Tipo de serviço: *"
+                android:textSize="16dp"
+                android:textColor="#1A7777"
+                tools:ignore="MissingConstraints" />
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginTop="3dp"
+
+                >
+
+            </Spinner>
+
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/txtData"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/spinner"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Opção de Data *"
+                android:inputType="date"
+                app:mask="##/##/####"
+                android:drawableLeft="@drawable/calendar"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_below="@id/txtData"
+
+                android:layout_marginTop="8dp"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manhã (08h às 12h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarde (13h às 17h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noite (18h às 22h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+
+            </RadioGroup>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/txtData2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/RadioGroup"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Opção de Data 2 (OPCIONAL)"
+                android:inputType="date"
+                app:mask="##/##/####"
+                android:drawableLeft="@drawable/calendar"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_below="@id/txtData2"
+
+                android:layout_marginTop="8dp"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manhã (08h às 12h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarde (13h às 17h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noite (18h às 22h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/txtData3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/RadioGroup2"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Opção de Data 3 (OPCIONAL)"
+                android:inputType="date"
+                app:mask="##/##/####"
+                android:drawableLeft="@drawable/calendar"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_below="@id/txtData3"
+
+                android:layout_marginTop="8dp"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manhã (08h às 12h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tarde (13h às 17h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noite (18h às 22h)"
+                    android:textColor="#1A7777"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inserir uma foto (Opcional)"
+                android:layout_below="@+id/RadioGroup3"
+                android:background="@drawable/enter_button"
+                android:layout_marginTop="18dp"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recViewFoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFoto"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btnAudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gravar Audio (Opcional)"
+                android:layout_below="@+id/recViewFoto"
+                android:background="@drawable/enter_button"
+                android:layout_marginTop="18dp"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+
+
+
+            <EditText
+                android:id="@+id/txtInfoPedido"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAudio"
+                android:layout_marginTop="10dp"
+                android:lines="10"
+                android:maxLines="10"
+                android:hint="INFORMAÇÕES ADICIONAIS"
+                android:ems="10"
+                android:drawablePadding="23dp"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp"
+                />
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtInfoPedido"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:text="ENVIAR"
+                android:background="@drawable/enter_button"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

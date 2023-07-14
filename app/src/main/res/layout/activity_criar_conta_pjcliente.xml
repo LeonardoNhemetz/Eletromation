@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarConta.CriarContaPJCliente"
+    android:background="@drawable/bgdentro">
+
+    <ImageView
+        android:id="@+id/imvcadesp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="130dp"
+        android:background="@drawable/logo_horizontal3"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imvcadesp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/lblCadastroClientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CADASTRO DE CLIENTE"
+                android:textStyle="bold"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="22dp"
+                android:textColor="#004747"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtEmailClientePJ"
+                android:hint="E-Mail *"
+                android:layout_below="@+id/lblCadastroClientes"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtSenhaClientePJ"
+                android:layout_below="@+id/txtEmailClientePJ"
+                android:hint="Senha *"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNomeClientePJ"
+                android:layout_below="@+id/txtSenhaClientePJ"
+                android:hint="Nome Completo *"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/character"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtCelularClientePJ"
+                android:layout_below="@+id/txtNomeClientePJ"
+                android:hint="Celular *"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                app:mask="(##)#####-####"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/character"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <Button
+                android:id="@+id/btnCadastrarClientePJ"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCelularClientePJ"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="35dp"
+                android:text="ENVIAR"
+                android:background="@drawable/enter_button"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

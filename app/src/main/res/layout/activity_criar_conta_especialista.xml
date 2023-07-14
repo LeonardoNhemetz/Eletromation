@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CriarConta.CriarContaEspecialista"
+    android:background="@drawable/bgdentro">
+
+    <ImageView
+        android:id="@+id/imvcadesp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/logo_horizontal"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imvcadesp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/lblCadastroClientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CADASTRO DE ESPECIALISTA"
+                android:textStyle="bold"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="21dp"
+                android:textColor="#004747"
+                />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtEmailEspecialista"
+                android:hint="E-Mail *"
+                android:layout_below="@+id/lblCadastroClientes"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtSenhaEspecialista"
+                android:layout_below="@+id/txtEmailEspecialista"
+                android:hint="Senha *"
+                android:inputType="textPassword"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtDocumentoEspecialista"
+                android:layout_below="@id/txtSenhaEspecialista"
+                android:hint="CNPJ *"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtFuncaoEspecialista"
+                android:layout_below="@id/txtDocumentoEspecialista"
+                android:hint="Função de Trabalho"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNomeEspecialista"
+                android:layout_below="@+id/txtFuncaoEspecialista"
+                android:hint="Nome *"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/character"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtRazaoSocialEspecialista"
+                android:layout_below="@+id/txtNomeEspecialista"
+                android:hint="Razão Social"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNomeFantasiaEspecialista"
+                android:layout_below="@+id/txtRazaoSocialEspecialista"
+                android:hint="Nome Fantasia"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <com.vicmikhailau.maskededittext.MaskedEditText
+                android:id="@+id/txtCepEspecialista"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/txtNomeFantasiaEspecialista"
+                android:hint="CEP *"
+                android:inputType="textAutoComplete"
+                app:mask="#####-###"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                />
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtEnderecoEspecialista"
+                android:layout_below="@+id/txtCepEspecialista"
+                android:hint="Endereço *"
+                android:inputType="textAutoComplete"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <Button
+                android:id="@+id/btnCadastrarEspecialista"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEnderecoEspecialista"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="35dp"
+                android:text="ENVIAR"
+                android:background="@drawable/enter_button"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

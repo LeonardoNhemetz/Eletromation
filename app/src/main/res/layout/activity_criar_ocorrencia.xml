@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente.CriarOcorrencia"
+    android:background="#151A7777">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:id="@+id/lblServicosOCO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:text="Criar Ocorrência"
+                android:textColor="#1A7777"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <Button
+                android:id="@+id/btnFotoOCO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inserir uma foto (Opcional)"
+                android:layout_below="@+id/lblServicosOCO"
+                android:background="@drawable/enter_button"
+                android:layout_marginTop="18dp"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recViewFotoOCO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnFotoOCO"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <Button
+                android:id="@+id/btnAudioOCO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gravar Audio (Opcional)"
+                android:layout_below="@+id/recViewFotoOCO"
+                android:background="@drawable/enter_button"
+                android:layout_marginTop="18dp"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:id="@+id/txtInfoPedidoOCO"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAudioOCO"
+                android:layout_marginTop="10dp"
+                android:lines="10"
+                android:maxLines="10"
+                android:hint="INFORMAÇÕES ADICIONAIS"
+                android:ems="10"
+                android:background="@drawable/rounded_white"
+                android:drawablePadding="23dp"
+                android:paddingStart="23dp"
+                android:paddingEnd="23dp"
+                />
+
+            <Button
+                android:id="@+id/btnEnviarOCO"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtInfoPedidoOCO"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:text="ENVIAR"
+                android:background="@drawable/enter_button"
+                android:textStyle="normal"
+                android:textColor="#fff"
+                android:layout_gravity="center"/>
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

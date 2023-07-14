@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsqueceuSenha"
+    android:background="@drawable/bgdentro"
+    android:orientation="vertical">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtEsqueceuSenhaEmail"
+        android:hint="Digite seu E-Mail"
+        android:inputType="textAutoComplete"
+        android:background="@drawable/rounded_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:drawablePadding="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="Enviar codigo para e-mail"
+        android:background="@drawable/enter_button"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:id="@+id/btnEnviarCodigo"
+        android:focusable="true"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtCodigo"
+        android:hint="Digite aqui o Codigo"
+        android:inputType="textAutoComplete"
+        android:background="@drawable/rounded_white"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="100dp"
+        android:textSize="18dp"
+        android:drawablePadding="5dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:text="Recuperar Senha"
+        android:background="@drawable/enter_button"
+        android:textStyle="normal"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:id="@+id/btnRecuperarSenha"
+        android:focusable="true"
+        />
+
+
+</LinearLayout>

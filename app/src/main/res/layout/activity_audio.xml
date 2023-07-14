@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente.Audio"
+    android:orientation="vertical"
+    android:background="#151A7777"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:layout_marginTop="100dp"
+      android:layout_marginRight="8dp"
+      android:layout_marginLeft="8dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="GRAVAR AUDIO"
+          android:textColor="#1A7777"
+          android:textSize="30dp"
+          android:textStyle="bold"
+          android:layout_gravity="center"/>
+
+      <Button
+          android:id="@+id/btnGravar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Gravar"
+          android:background="@drawable/enter_button"
+          android:layout_marginTop="30dp"
+          android:textStyle="normal"
+          android:drawableLeft="@drawable/record"
+          android:drawablePadding="5dp"
+          android:paddingStart="15dp"
+          android:paddingEnd="15dp"
+
+          android:textColor="#fff"/>
+
+
+      <Button
+          android:id="@+id/btnParar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+
+          android:background="@drawable/enter_button"
+          android:drawableLeft="@drawable/play"
+          android:drawablePadding="5dp"
+          android:paddingStart="15dp"
+          android:paddingEnd="15dp"
+          android:text="Parar e escutar"
+          android:textColor="#fff"
+          android:textStyle="normal" />
+
+      <Button
+          android:id="@+id/btnEnviar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Enviar audio"
+          android:background="@drawable/enter_button"
+          android:layout_marginTop="30dp"
+          android:textStyle="normal"
+          android:textColor="#fff"/>
+
+
+
+
+  </LinearLayout>
+
+
+</LinearLayout>
